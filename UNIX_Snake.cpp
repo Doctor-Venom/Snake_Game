@@ -86,7 +86,7 @@ void draw()
 
 void input(){
 	cbreak();
-	timeout(500);
+	timeout(-1);
 	ch = getch();
 	endwin();
 	if(ch=='a') {dir=(prev_dir==RIGHT)?STOP:LEFT; prev_dir=dir;}
